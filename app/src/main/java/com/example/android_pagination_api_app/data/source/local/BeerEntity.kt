@@ -1,0 +1,15 @@
+package com.example.android_pagination_api_app.data.source.local
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
+data class BeerEntity(
+    @PrimaryKey(autoGenerate = false)
+    val id: Int,
+    val name: String,
+    val tagline: String,
+    val description: String,
+    val firstBrewed: String,
+    val imageUrl: String?
+)
